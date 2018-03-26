@@ -4,8 +4,14 @@
              xmlns:local="clr-namespace:FaceIdentifier"
              x:Class="FaceIdentifier.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout>
+        <Button x:Name="btnTakePhoto" Text="Take Photo" BackgroundColor="Gainsboro" TextColor="White" Clicked="btnTakePhoto_Clicked" />
+        <Button x:Name="btnPickPhoto" Text="Pick Photo" BackgroundColor="AliceBlue" TextColor="White" Clicked="btnPickPhoto_Clicked" />
+
+        <Image x:Name="imgPhotoToIdentify" HeightRequest="300" />
+
+        <Button x:Name="btnIdentifyPhoto" Text="Identify Photo" BackgroundColor="BlanchedAlmond" TextColor="White" Clicked="btnIdentifyPhoto_Clicked" />
+
+    </StackLayout>
 
 </ContentPage>
